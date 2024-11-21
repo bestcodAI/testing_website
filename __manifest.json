@@ -1,6 +1,6 @@
 {
-    "name": "X bussiness",
-    "short_name": "X bussiness",
+    "name": "X Bussiness",
+    "short_name": "X Bussiness",
     "start_url": "index.html",
     "display": "standalone",
     "scope" : "/",
