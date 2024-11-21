@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <title>x bussiness</title>
+    <meta name="description" content="Finapp HTML Mobile Template">
+    <meta name="keywords" content="bootstrap, wallet, banking, fintech mobile template, cordova, phonegap, mobile, html, responsive" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/192x192.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="manifest" href="__manifest.json">
+</head>
+
+<body>
+
+    <!-- loader -->
+    <div id="loader">
+        <!-- <img src="assets/img/loading-icon.png" alt="icon" class="loading-icon"> -->
+        <div class="spinner-border text-info" role="status"></div>
+    </div>
+    <!-- * loader -->
+
+    <!-- App Header -->
+    <div class="appHeader">
+        <div class="left">
+            <a href="#" class="headerButton" data-bs-toggle="modal" data-bs-target="#sidebarPanel">
+                <ion-icon name="menu-outline"></ion-icon>
+            </a>
+        </div>
+        <div class="pageTitle">
+            Dashboard
+        </div>
+        <!-- <div class="right">
+            <a href="#" class="headerButton" data-bs-toggle="modal" data-bs-target="#actionSheetForm">
+                <ion-icon name="add-outline"></ion-icon>
+            </a>
+        </div> -->
+    </div>
+    <!-- * App Header -->
+
+
+    <!-- Form Action Sheet -->
+    <!-- <div class="modal fade action-sheet" id="actionSheetForm" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Dashboard</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="action-sheet-content">
+
+                        <form>
+                            <div class="form-group basic">
+                                <label class="label">Bill ID</label>
+                                <div class="input-group">
+                                    <span class="input-group-text" id="basic-addon1">#</span>
+                                    <input type="text" class="form-control" placeholder="Enter an amount" value="41512">
+                                </div>
+                                <div class="input-info">Enter the ID of the bill you want to add.</div>
+                            </div>
+
+
+                            <div class="form-group basic">
+                                <button type="button" class="btn btn-primary btn-block btn-lg"
+                                    data-bs-dismiss="modal">Add</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- * Form Action Sheet -->
+
+
+    <!-- App Capsule -->
+    <div id="appCapsule" class="extra-header-active full-height">
+
+        <div class="section tab-content mt-2 mb-1">
+
+            <!-- waiting tab -->
+            <div class="tab-pane fade show active" id="waiting" role="tabpanel">
+                <div class="row">
+                    
+                    <div class="col-6 mb-2">
+                        <a class="text-dark" href="current_order.html">
+                        <div class="bill-box bg-primary">
+                            <div class="img-wrapper">
+                                <img src="assets/img/dashboard/package-delivered-icon.png" alt="img" class="image-block imaged w48">
+                            </div>
+                            <div>Current Order</div>
+                        </div>
+                        </a>
+                    </div>
+                  
+                    <div class="col-6 mb-2">
+                        <a class="text-dark" href="complete_booking.html">
+                            <div class="bill-box bg-success">
+                                <div class="img-wrapper">
+                                    <img src="assets/img/dashboard/booking-confirmed-icon.png" alt="img" class="image-block imaged w48">
+                                </div>
+                                <div>Complete booking</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 mb-2">
+                        <a class="text-dark" href="report_problem.html">
+                            <div class="bill-box bg-danger">
+                                <div class="img-wrapper">
+                                    <img src="assets/img/dashboard/booking-cancel-icon.png" alt="img" class="image-block imaged w48">
+                                </div>
+                                <div>Report Problem</div>
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 mb-2">
+                        <a class="text-dark" href="receipt.html">
+                            <div class="bill-box bg-warning">
+                                <div class="img-wrapper">
+                                    <img src="assets/img/dashboard/checkmark-invoice-icon.png" alt="img" class="image-block imaged w48">
+                                </div>
+                                <div>Receipt</div>
+                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 mb-2">
+                        <a class="text-dark" href="clear_order.html">
+                            <div class="bill-box bg-info">
+                                <div class="img-wrapper">
+                                    <img src="assets/img/dashboard/clear-order.png" alt="img" class="image-block imaged w48">
+                                </div>
+                                <div>Clear order</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 mb-2">
+                        <a class="text-dark" href="transfer.html">
+                            <div class="bill-box bg-secondary">
+                                <div class="img-wrapper">
+                                    <img src="assets/img/dashboard/mobile-money-transfer-icon.png" alt="img" class="image-block imaged w48">
+                                </div>
+                                <div>Transfer Money</div>  
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- * waiting tab -->
+
+
+
+            <!-- paid tab -->
+            <div class="tab-pane fade" id="paid" role="tabpanel">
+                <div class="row">
+                    <div class="col-6 mb-2">
+                        <div class="bill-box">
+                            <div class="img-wrapper">
+                                <img src="assets/img/sample/brand/1.jpg" alt="img" class="image-block imaged w48">
+                            </div>
+                            <div class="price">$ 14</div>
+                            <p>Prime Monthly Subscription</p>
+                            <a href="#" class="btn btn-primary btn-block btn-sm">DETAIL</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- * paid tab -->
+
+            <!-- App Sidebar -->
+    <div class="modal fade panelbox panelbox-left" id="sidebarPanel" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <!-- profile box -->
+                    <div class="profileBox pt-2 pb-2">
+                        <div class="image-wrapper">
+                            <img src="assets/img/sample/avatar/web_development.png" alt="image" class="imaged  w36">
+                        </div>
+                        <div class="in">
+                            <strong>Sebastian Doe</strong>
+                            <div class="text-muted">4029209</div>
+                        </div>
+                        <a href="#" class="btn btn-link btn-icon sidebar-close" data-bs-dismiss="modal">
+                            <ion-icon name="close-outline"></ion-icon>
+                        </a>
+                    </div>
+                    <!-- * profile box -->
+                    <!-- balance -->
+                    <div class="sidebar-balance">
+                        <div class="listview-title">Balance</div>
+                        <div class="in">
+                            <h1 class="amount">$ 2,562.50</h1>
+                        </div>
+                    </div>
+                    <!-- * balance -->
+
+                    <!-- action group -->
+                    <div class="action-group">
+                        <a href="index.html" class="action-button">
+                            <div class="in">
+                                <div class="iconbox">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </div>
+                                Deposit
+                            </div>
+                        </a>
+                        <a href="index.html" class="action-button">
+                            <div class="in">
+                                <div class="iconbox">
+                                    <ion-icon name="arrow-down-outline"></ion-icon>
+                                </div>
+                                Withdraw
+                            </div>
+                        </a>
+                        <a href="index.html" class="action-button">
+                            <div class="in">
+                                <div class="iconbox">
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </div>
+                                Send
+                            </div>
+                        </a>
+                        <a href="app-cards.html" class="action-button">
+                            <div class="in">
+                                <div class="iconbox">
+                                    <ion-icon name="card-outline"></ion-icon>
+                                </div>
+                                My Cards
+                            </div>
+                        </a>
+                    </div>
+                    <!-- * action group -->
+
+                    <!-- menu -->
+                    <!-- <div class="listview-title mt-1">Menu</div> -->
+                    <div class="listview-title mt-1 text-center">
+                        <a href="bussiness_account.html" class="item">
+                            <div class="icon-box bg-primary rounded">
+                                Upgrad to Bussiness account
+                            </div>
+                        </a>
+                    </div>
+                    <ul class="listview flush transparent no-line image-listview">
+                        <li>
+                            <a href="index.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="home-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    Home
+                                    <!-- <span class="badge badge-primary">10</span> -->
+                                </div>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="dashboard.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="grid-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    Dashboard
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="booking_categories.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <!-- <ion-icon name="apps-outline"></ion-icon> -->
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    Booking categories
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="receiving_categories.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="receipt-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    Receiving categories
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="app-cards.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="information-circle-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    Feedback
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- * menu -->
+
+                    <!-- others -->
+                    <!-- <div class="listview-title mt-1">Others</div> -->
+                    <ul class="listview flush transparent no-line image-listview">
+                        <li>
+                            <a href="settings.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="settings-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    Settings
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="component-messages.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="map-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    Live location
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="component-messages.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="layers-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    Term and Condition
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="app-login.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="log-out-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    Log out
+                                </div>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                    <!-- * others -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- * App Sidebar -->
+
+
+
+        </div>
+
+    </div>
+    <!-- * App Capsule -->
+    <!-- ========= JS Files =========  -->
+    <!-- Bootstrap -->
+    <script src="assets/js/lib/bootstrap.bundle.min.js"></script>
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Splide -->
+    <script src="assets/js/plugins/splide/splide.min.js"></script>
+    <!-- Base Js File -->
+    <script src="assets/js/base.js"></script>
+
+
+</body>
+
+</html>

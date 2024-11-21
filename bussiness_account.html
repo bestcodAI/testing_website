@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <title>X bussiness</title>
+    <meta name="description" content="Finapp HTML Mobile Template">
+    <meta name="keywords" content="bootstrap, wallet, banking, fintech mobile template, cordova, phonegap, mobile, html, responsive" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/192x192.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="manifest" href="__manifest.json">
+</head>
+
+<body class="">
+
+    <!-- loader -->
+    <div id="loader">
+        <!-- <img src="assets/img/loading-icon.png" alt="icon" class="loading-icon"> -->
+        <div class="spinner-border text-info" role="status"></div>
+    </div>
+    <!-- * loader -->
+
+    <!-- App Header -->
+    <div class="appHeader">
+        <div class="left">
+            <a href="#" class="headerButton goBack">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </a>
+        </div>
+        <div class="pageTitle">
+            Bussiness Account
+        </div>
+    </div>
+    <!-- * App Header -->
+
+    <!-- App Capsule -->
+    <div id="appCapsule">
+
+        <div class="section full">
+            <div class="wide-block pt-2 pb-2">
+                <div class="mb-05 text-primary fw-bold">Upgrade to Bussiness Account</div>
+                <p class="fs-6">The benetfit if setting up a Bussiness Account is that you will receive a special service discount between 10% to 15% on all packages and locations in phnom penh, Destails are shown in this [table]</p>
+                
+            </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="section">
+            <div class="listview-title mt-1">1 - For Subscription 10%</div>
+            <div class="row mt-2">
+                <div class="col-4">
+                    <div class="text-center bg-primary rounded">1 Month</div>
+                    <div class="stat-box">
+                        <span class="text-primary">$ 552.95</span>   
+                    </div>
+                    <!-- <div class="border border-primary rounded text-center"> -->
+                        <input class="form-check-input" type="radio" name="radioList" id="radioList1" checked>
+                        <label class="form-check-label" for="radioList1">Basic</label>
+                    <!-- </div>   -->
+                </div>
+                <div class="col-4">
+                    <div class="text-center bg-info rounded">3 Months</div>
+                    <div class="stat-box">
+                        <span class="text-info">$ 86.45</span>
+                    </div>
+                    <input class="form-check-input" type="radio" name="radioList" id="radioList2" >
+                    <label class="form-check-label" for="radioList2">Pro</label>
+                </div>
+                <div class="col-4">
+                    <div class="text-center bg-warning rounded">6 Months</div>
+                    <div class="stat-box">
+                        <span class="text-warning">$ 86.45</span>
+                    </div>
+                    <input class="form-check-input" type="radio" name="radioList" id="radioList3">
+                    <label class="form-check-label" for="radioList3">ULTIMATE</label>
+                </div>
+            </div>
+            <div class="listview-title mt-1">2- For Subscription 15%</div>
+            <div class="row mt-2">
+                <div class="col-4">
+                    <div class="text-center bg-primary rounded">1 Month</div>
+                    <div class="stat-box">
+                        <span class="text-primary">$ 552.95</span>
+                    </div>
+                    <input class="form-check-input" type="radio" name="radioList" id="radioList4" checked>
+                    <label class="form-check-label" for="radioList4">Basic</label>
+                </div>
+                <div class="col-4">
+                    <div class="text-center bg-info rounded">3 Months</div>
+                    <div class="stat-box">
+                        <span class="text-info">$ 86.45</span>
+                    </div>
+                    <input class="form-check-input" type="radio" name="radioList" id="radioList5" checked>
+                    <label class="form-check-label" for="radioList5">PRO</label>
+                </div>
+                <div class="col-4">
+                    <div class="text-center bg-warning rounded">6 Months</div>
+                    <div class="stat-box">
+                        <span class="text-warning">$ 86.45</span>
+                    </div>
+                    <input class="form-check-input" type="radio" name="radioList" id="radioList6" checked>
+                    <label class="form-check-label" for="radioList6">ULTIMATE</label>
+                </div>
+            </div>
+        </div>
+        <!-- * Stats -->
+
+        <div class="section mt-2 full">
+            <!-- <div class="section-title">Basic</div> -->
+            <div class="card">
+                <div class="card-body">
+                    <form>
+                        <div class="form-group basic">
+                            <div class="input-wrapper">
+                                <!-- <label class="label" for="userid1">User ID</label> -->
+                                <input type="text" class="form-control" id="userid1" value="Currently you are 1 Month (expire 2024-05-12)" placeholder="Enter an User ID">
+                                <i class="clear-input">
+                                    <ion-icon name="close-circle"></ion-icon>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="form-group basic">
+                            <div class="input-wrapper">
+                                <!-- <label class="label" for="userid1">User ID</label> -->
+                                <input type="text" class="form-control" value="Please selectt account to transfer" id="userid1" placeholder="Enter an User ID">
+                                <i class="clear-input">
+                                    <ion-icon name="close-circle"></ion-icon>
+                                </i>
+                            </div>
+                        </div>
+
+                        <div class="form-group basic">
+                            <div class="input-wrapper">
+                                <label class="label" for="account1">Bank</label>
+                                <select class="form-control custom-select" id="account1">
+                                    <option value="0">Cash on hand</option>
+                                    <option value="1">ABA bank</option>
+                                    <option value="2">Aclida bank</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group basic">
+                            <div class="input-wrapper">
+                                <!-- <label class="label" for="userid1">User ID</label> -->
+                                <input type="text" class="form-control" id="userid1" value="Subscription amount" placeholder="Enter an User ID">
+                                <i class="clear-input">
+                                    <ion-icon name="close-circle"></ion-icon>
+                                </i>
+                            </div>
+                        </div>
+
+                        <div class="form-group basic">
+                            <div class="input-wrapper">
+                                <!-- <label class="label" for="userid1">User ID</label> -->
+                                <input type="text" class="form-control" id="userid1" value="14.99" placeholder="Enter an User ID">
+                                <i class="clear-input">
+                                    <ion-icon name="close-circle"></ion-icon>
+                                </i>
+                            </div>
+                        </div>
+
+                        <div class="form-group basic">
+                            <div class="input-wrapper">
+                                <input type="text" class="form-control" value="Upload your invoice" id="amount1" placeholder="Enter an Amount">
+                                <i class="clear-input">
+                                    <ion-icon name="close-circle"></ion-icon>
+                                </i>
+                            </div>
+                        </div>
+
+                        <div class="custom-file-upload" id="fileUpload1">
+                            <input type="file" id="fileuploadInput" accept=".png, .jpg, .jpeg">
+                            <label for="fileuploadInput">
+                                <span>
+                                    <strong>
+                                        <ion-icon name="arrow-up-circle-outline"></ion-icon>
+                                        <i>Upload a Photo</i>
+                                    </strong>
+                                </span>
+                            </label>
+                        </div>
+                
+                        <div class="custom-control custom-checkbox mt-2 mb-1">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="customCheckb1">
+                                <label class="form-check-label" for="customCheckb1">
+                                    I agree <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal">terms and
+                                        conditions</a>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group basic">
+                            <button type="button" class="btn btn-primary btn-block">Submit</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="section inset mt-2">
+            <div class="accordion" id="accordionExample1">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#accordion01">
+                            What is Finapp?
+                        </button>
+                    </h2>
+                    <div id="accordion01" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                        <div class="accordion-body">
+                            Finapp is HTML mobile template for mobile devices.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#accordion02">
+                            Is Finapp Bootstrap 5 based?
+                        </button>
+                    </h2>
+                    <div id="accordion02" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                        <div class="accordion-body">
+                            Yes. Finapp using Bootstrap 5 css framework.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#accordion03">
+                            How can i customize this template?
+                        </button>
+                    </h2>
+                    <div id="accordion03" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                        <div class="accordion-body">
+                            Finapp based on HTML, CSS and Vanilla Javascript. That's all. You don't need others. Use
+                            your web skills you already known.
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#accordion04">
+                            Is this template a PWA?
+                        </button>
+                    </h2>
+                    <div id="accordion04" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
+                        <div class="accordion-body">
+                            Yes, Finapp is a PWA (Progressive Web App) ready. You can add it your mobile device's
+                            homescreen and use it like an app.
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+
+
+        <!-- <div class="section inset mt-2">
+            <div class="accordion" id="accordionExample2">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#accordion11">
+                            How can i contact you?
+                        </button>
+                    </h2>
+                    <div id="accordion11" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                        <div class="accordion-body">
+                            You can contact us on <a
+                                href="https://themeforest.net/item/finapp-wallet-banking-htms-mobile-template/25738217/support"
+                                target="_blank">Finapp support tab</a>.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#accordion12">
+                            How can i buy this?
+                        </button>
+                    </h2>
+                    <div id="accordion12" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                        <div class="accordion-body">
+                            You can buy it on <a
+                                href="https://themeforest.net/item/finapp-wallet-banking-htms-mobile-template/25738217"
+                                target="_blank">Themeforest</a>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- <div class="section mt-3 mb-3">
+            <div class="card bg-primary">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Still have question?</h5>
+                    <p class="card-text">
+                        Feel free to contact us
+                    </p>
+                    <a href="#" class="btn btn-dark">
+                        <ion-icon name="mail-open-outline"></ion-icon> Contact
+                    </a>
+                </div>
+            </div>
+        </div> -->
+
+    </div>
+    <!-- * App Capsule -->
+
+
+    <!-- App Bottom Menu -->
+    <!-- <div class="appBottomMenu">
+        <a href="index.html" class="item">
+            <div class="col">
+                <ion-icon name="pie-chart-outline"></ion-icon>
+                <strong>Overview</strong>
+            </div>
+        </a>
+        <a href="app-pages.html" class="item">
+            <div class="col">
+                <ion-icon name="document-text-outline"></ion-icon>
+                <strong>Pages</strong>
+            </div>
+        </a>
+        <a href="app-components.html" class="item">
+            <div class="col">
+                <ion-icon name="apps-outline"></ion-icon>
+                <strong>Components</strong>
+            </div>
+        </a>
+        <a href="app-cards.html" class="item">
+            <div class="col">
+                <ion-icon name="card-outline"></ion-icon>
+                <strong>My Cards</strong>
+            </div>
+        </a>
+        <a href="app-settings.html" class="item">
+            <div class="col">
+                <ion-icon name="settings-outline"></ion-icon>
+                <strong>Settings</strong>
+            </div>
+        </a> -->
+    </div>
+    <!-- * App Bottom Menu -->
+
+
+    <!-- ========= JS Files =========  -->
+    <!-- Bootstrap -->
+    <script src="assets/js/lib/bootstrap.bundle.min.js"></script>
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Splide -->
+    <script src="assets/js/plugins/splide/splide.min.js"></script>
+    <!-- Base Js File -->
+    <script src="assets/js/base.js"></script>
+
+
+</body>
+
+</html>

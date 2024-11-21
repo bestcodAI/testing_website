@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <title>X bussiness</title>
+    <meta name="description" content="Finapp HTML Mobile Template">
+    <meta name="keywords" content="bootstrap, wallet, banking, fintech mobile template, cordova, phonegap, mobile, html, responsive" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/192x192.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="manifest" href="__manifest.json">
+</head>
+
+<body>
+
+    <!-- loader -->
+    <div id="loader">
+        <!-- <img src="assets/img/loading-icon.png" alt="icon" class="loading-icon"> -->
+        <div class="spinner-border text-info" role="status"></div>
+    </div>
+    <!-- * loader -->
+
+    <!-- App Header -->
+    <div class="appHeader">
+        <div class="left">
+            <a href="#" class="headerButton goBack">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </a>
+            <div class="pageTitle">
+                Clear payment
+            </div>
+        </div>
+        
+        <div class="right"> 
+           
+            <a href="#" data-bs-toggle="modal" data-bs-target="#FormDate" class="headerButton"> 
+                <ion-icon name="filter-outline"></ion-icon>
+            </a>
+        </div>
+    </div>
+    <!-- * App Header -->
+
+    <!-- Search Component -->
+    <div id="search" class="appHeader">
+        <form class="search-form">
+            <div class="form-group searchbox">
+                <input type="text" class="form-control" placeholder="Search...">
+                <i class="input-icon icon ion-ios-search"></i>
+                <a href="#" class="ms-1 close toggle-searchbox"><i class="icon ion-ios-close-circle"></i></a>
+            </div>
+        </form>
+    </div>
+    <!-- * Search Component -->
+    <!-- App Capsule -->
+    <div id="appCapsule">
+        <div class="section full mt-2">
+            <div class="card">
+                <!-- <div class="table-responsive">
+                    <table class="table text-center">
+                        <thead class="bg-primary">
+                            <tr>
+                                <th scope="col" class="text-white">#</th>
+                                <th scope="col" class="text-white">Date</th>
+                                <th scope="col" class="text-white">Reference</th>
+                                <th scope="col" class="text-white">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>John</td>
+                                <td>John</td>
+                                <td class="text-end text-primary">$ 509.40</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Mark</td>
+                                <td>John</td>
+                                <td class="text-end text-primary">$ 230.95</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Jane</td>
+                                <td>John</td>
+                                <td class="text-end text-primary">$ 3,420.50</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> -->
+                
+                <div class="container">
+                    <img class="img-fluid" src="/assets/img/dashboard/no_data.jpg"  width="100%"> 
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="section mt-2 mb-2" hidden>
+            <a href="#" class="btn btn-primary btn-block btn-lg">Load More</a>
+        </div>
+
+    </div>
+    <!-- * App Capsule -->
+
+
+    <!-- App Bottom Menu -->
+    <div class="appBottomMenu pt-1 bg-primary" hidden>
+        <a href="#" class="item">
+            <div class="col">
+                <div class="bg-white rounded">
+                    <strong class="text-secondary">Amount</strong>
+                    <p class="p-1 text-info fw-bold">1</p>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="item">
+            <div class="col">
+                <div class="bg-white rounded">
+                    <strong class="text-secondary">Fee</strong>
+                    <p class="p-1 text-info fw-bold">$100</p>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="item">
+            <div class="col">
+                <div class="bg-white rounded">
+                    <strong class="text-secondary">Bus Fee</strong>
+                    <p class="p-1 text-info fw-bold">$100</p>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="item">
+            <div class="col">
+                <div class="bg-white rounded">
+                    <strong class="text-secondary">Balance</strong>
+                    <p class="p-1 text-info fw-bold">$100</p>
+                </div>
+            </div>
+        </a>
+       
+    </div>
+    <!-- * App Bottom Menu -->
+
+    <!-- Dialog Form -->
+    <div class="modal fade dialogbox" id="FormDate" data-bs-backdrop="static" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Filter</h5>
+                </div>
+                <form>
+                    <div class="modal-body text-start mb-2">
+                        <div class="form-group basic">
+                            <div class="input-wrapper">
+                                <label class="label" for="text1">From Date</label>
+                                <input type="date" class="form-control" placeholder="dd-mm-yyyy" id="text1" value="100">
+                                <i class="clear-input">
+                                    <ion-icon name="close-circle"></ion-icon>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="form-group basic">
+                            <div class="input-wrapper">
+                                <label class="label" for="text1">To Date</label>
+                                <input type="date" class="form-control" placeholder="dd-mm-yyyy" id="text1" value="">
+                                <i class="clear-input">
+                                    <ion-icon name="close-circle"></ion-icon>
+                                </i>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <div class="btn-inline">
+                            <button type="button" class="btn btn-text-secondary"
+                                data-bs-dismiss="modal">CANCEL</button>
+                            <button type="button" class="btn btn-text-primary"
+                                data-bs-dismiss="modal">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- * Dialog Form -->
+
+    <!-- Dialog Form -->
+    <div class="modal fade dialogbox" id="FormFilter" data-bs-backdrop="static" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sort By</h5>
+                </div>
+                <form>
+                    <div class="modal-body text-start mb-2">
+                        <div class="form-check mb-1">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Latest
+                            </label>
+                        </div>
+                        <div class="form-check mb-1">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Lowest Price
+                            </label>
+                        </div>
+                        <div class="form-check mb-1">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                            <label class="form-check-label" for="flexRadioDefault3">
+                                Hight Price
+                            </label>
+                        </div>
+                        <div class="form-check mb-1">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                            <label class="form-check-label" for="flexRadioDefault4">
+                                Lowest Quantity
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+                            <label class="form-check-label" for="flexRadioDefault5">
+                                Hight Quantity
+                            </label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="btn-inline">
+                            <button type="button" class="btn btn-text-primary"
+                                data-bs-dismiss="modal">Done</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- * Dialog Form -->
+
+
+    <!-- ========= JS Files =========  -->
+    <!-- Bootstrap -->
+    <script src="assets/js/lib/bootstrap.bundle.min.js"></script>
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Splide -->
+    <script src="assets/js/plugins/splide/splide.min.js"></script>
+    <!-- Base Js File -->
+    <script src="assets/js/base.js"></script>
+
+
+</body>
+
+</html>

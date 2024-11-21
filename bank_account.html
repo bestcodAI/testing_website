@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <title>Finapp</title>
+    <meta name="description" content="Finapp HTML Mobile Template">
+    <meta name="keywords" content="bootstrap, wallet, banking, fintech mobile template, cordova, phonegap, mobile, html, responsive" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/192x192.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="manifest" href="__manifest.json">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+</head>
+
+<body class="bg-white">
+
+    <!-- loader -->
+    <div id="loader">
+        <div class="spinner-border text-info" role="status"></div>
+    </div>
+    <!-- * loader -->
+
+    <!-- App Header -->
+    <div class="appHeader no-border">
+        <div class="left">
+            <a href="#" class="headerButton goBack">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </a>
+        </div>
+        <div class="pageTitle">
+            Bank account
+        </div>
+        <!-- <div class="right">
+            <a href="#" class="headerButton" data-bs-toggle="modal" data-bs-target="#DialogBasic">Help</a>
+        </div> -->
+    </div>
+    <!-- * App Header -->
+
+    <!-- Dialog Basic -->
+    <div class="modal fade dialogbox" id="DialogBasic" data-bs-backdrop="static" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">QR Code Verification</h5>
+                </div>
+                <div class="modal-body">
+                    You can use QR code verification for two-factor authentication or protect actions.
+                </div>
+                <div class="modal-footer">
+                    <div class="btn-inline">
+                        <a href="#" class="btn btn-text-primary" data-bs-dismiss="modal">OK</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- * Dialog Basic -->
+
+    <!-- App Capsule -->
+    <div id="appCapsule">
+        
+        <div class="section">
+            <span>Update bank account information</span>
+            <div class="splash-page mt-5 mb-5">
+                
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-3">
+                            <!-- <img src="assets/img/sample/qr.png" alt="QR Code" class="imaged square w140"> -->
+                            <canvas id="qr-code" class="imaged square w140" style="border: none;"></canvas>
+                        </div>
+                        <h2 class="mb-2">ABA Bank</h2>
+                        <p>09223433</p>
+                    </div>
+    
+                    <div class="col">
+                        <div class="mb-3">
+                            <!-- <img src="assets/img/sample/qr.png" alt="QR Code" class="imaged square w140"> -->
+                            <canvas id="qr-code1" class="imaged square w140" style="border: none;"></canvas>
+                        </div>
+                        <h2 class="mb-2">ACLIDA Bank</h2>
+                        <p>0209339933</p>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+
+    </div>
+    <!-- * App Capsule -->
+
+
+    <!-- ========= JS Files =========  -->
+    <!-- Bootstrap -->
+    <script src="assets/js/lib/bootstrap.bundle.min.js"></script>
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Splide -->
+    <script src="assets/js/plugins/splide/splide.min.js"></script>
+    <!-- Base Js File -->
+    <script src="assets/js/base.js"></script>
+
+    <script>
+
+        const decipher = salt => {
+            const textToChars = text => text.split('').map(c => c.charCodeAt(0));
+            const applySaltToChar = code => textToChars(salt).reduce((a,b) => a ^ b, code);
+            return encoded => encoded.match(/.{1,2}/g)
+            .map(hex => parseInt(hex, 16))
+            .map(applySaltToChar)
+            .map(charCode => String.fromCharCode(charCode))
+            .join('');
+        }
+
+        /* JS comes here */
+        const myDecipher = decipher('mySecretSalt')
+
+        var qr, qr1;
+        (function() {
+                qr = new QRious({
+                element: document.getElementById('qr-code'),
+                size: 200,
+                value: myDecipher("3838383a38393839383a39393a313c3d3838393e696a69696360787870707048696a6969383938313d38383c3d393b3f3b383a3830494a49284a6966633c383b313838383e696a69583a583839393a3e31494a4e3831393b383a3a383a38313d38383c3d393b3f3b3d3a383c383838383d3b383b303c383d30383a43403d31393a4b40475d284b4049454649463e383938586066676528586d66603e3b383c314c3e4d")
+            });
+        })();
+
+        (function() {
+                qr1 = new QRious({
+                element: document.getElementById('qr-code1'),
+                size: 200,
+                value: myDecipher("3838383a38393839383a39393a313b3f383838316360797a48696b646a38393938383f393b3d3e3f31383f383a383e494b444d4c493b313a3838383939303d3d393f3a383f313e3d383938393c3d3a383c3a3838383d3b383b39393e3d30383a43403d31393a4b40475d284b4049454649463e383938584046474528584d46403e3a393c383a3938383f393b3d3e3f31383f3e3b383c393b304c")
+            });
+        })();
+
+        qr.level = 'L';
+        qr1.level = 'L';
+
+              
+      </script>
+
+
+</body>
+
+</html>
