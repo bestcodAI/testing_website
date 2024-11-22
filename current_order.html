@@ -21,7 +21,6 @@
 
     <!-- loader -->
     <div id="loader">
-        <!-- <img src="assets/img/loading-icon.png" alt="icon" class="loading-icon"> -->
         <div class="spinner-border text-info" role="status"></div>
     </div>
     <!-- * loader -->
@@ -32,15 +31,15 @@
             <a href="#" class="headerButton goBack">
                 <ion-icon name="chevron-back-outline"></ion-icon>
             </a>
-            <div class="pageTitle">
-                Current Orders
-            </div>
+        </div>
+        <div class="pageTitle">
+            Current Orders
         </div>
         <div class="right">
             <a href="#" class="headerButton toggle-searchbox">
                 <ion-icon name="search-outline"></ion-icon>
             </a>
-            <a href="#" data-bs-toggle="modal" data-bs-target="#FormFilter" class="headerButton">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#actionSheetInset" class="headerButton">
                 <ion-icon name="funnel-outline"></ion-icon>
             </a>
             <a href="#" data-bs-toggle="modal" data-bs-target="#FormDate" class="headerButton"> 
@@ -62,64 +61,50 @@
     </div>
     <!-- * Search Component -->
 
-     <!-- Extra Header -->
-    <div class="extraHeader pe-0 ps-0 bg-primary">
-        <ul class="nav nav-tabs lined" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link text-white">
-                    Buyer Info
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white">
-                    Payment Info
-                </a>
-            </li>
-        </ul>
-    </div>
-    <!-- * Extra Header -->
-
-
     <!-- App Capsule -->
-    <div id="appCapsule" class="extra-header-active full-height">
+    <div id="appCapsule">
 
-        <!-- Transactions -->
         <div class="section mt-2">
-           
-            <div class="transactions">
-                <!-- item -->
-                <div class="item">
-                    <div class="detail">
-                        <div>
-                            <strong>Order No - 1</strong>
-                            <p>Phnom Penh</p>
-                            <p>Ok</p>
-                            <p>098238339</p>
-                            <p>Fee: $0.0</p>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <div class="detail">
-                            <div>
-                                <strong>18 Nov 2024</strong>
-                                <del class="text-danger"><p>Amount: $1.0</p></del>
-                                <p>Quantity: 1</p>
-                                <p>Paid</p>
-                                <p class="text-danger">Approved</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="card">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col text-center">Buyer info</th>
+                                <th scope="col text-center">Payment info</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <strong>Order No - 1</strong><br/>
+                                        <span>Phnom Penh</span><br/>
+                                        <span>Ok</span><br/>
+                                        <span>098238339</span><br/>
+                                        <span>Fee: $0.0</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <strong>18 Nov 2024</strong><br/>
+                                        <del class="text-danger"><span>Amount: $1.0</span></del><br/>
+                                        <span>Quantity: 1</span><br/>
+                                        <span>Paid</span><br/>
+                                        <span class="text-danger">Approved</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <!-- * item -->
                 
+                <!-- <div class="container">
+                    <img class="img-fluid" src="/assets/img/dashboard/no_data.jpg"  width="100%"> 
+                </div> -->
+
             </div>
         </div>
-        <!-- * Transactions -->
-        
-        <div class="section mt-2 mb-2" hidden>
-            <a href="#" class="btn btn-primary btn-block btn-lg">Load More</a>
-        </div>
-
     </div>
     <!-- * App Capsule -->
 
@@ -188,57 +173,53 @@
     </div>
     <!-- * Dialog Form -->
 
-    <!-- Dialog Form -->
-    <div class="modal fade dialogbox" id="FormFilter" data-bs-backdrop="static" tabindex="-1" role="dialog">
+    <!-- Default Action Sheet Inset -->
+    <div class="modal fade action-sheet inset" id="actionSheetInset" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Sort By</h5>
                 </div>
-                <form>
-                    <div class="modal-body text-start mb-2">
-                        <div class="form-check mb-1">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">
-                                Latest
-                            </label>
-                        </div>
-                        <div class="form-check mb-1">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                            <label class="form-check-label" for="flexRadioDefault2">
-                                Lowest Price
-                            </label>
-                        </div>
-                        <div class="form-check mb-1">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-                            <label class="form-check-label" for="flexRadioDefault3">
-                                Hight Price
-                            </label>
-                        </div>
-                        <div class="form-check mb-1">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
-                            <label class="form-check-label" for="flexRadioDefault4">
-                                Lowest Quantity
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
-                            <label class="form-check-label" for="flexRadioDefault5">
-                                Hight Quantity
-                            </label>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <div class="btn-inline">
-                            <button type="button" class="btn btn-text-primary"
-                                data-bs-dismiss="modal">Done</button>
+                <div class="modal-body">
+                    <div class="container mb-2">
+                        <div class="action-button-list">
+                            <div class="form-check mb-1">
+                                <input class="form-check-input"  data-bs-dismiss="modal" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Latest
+                                </label>
+                            </div>
+                            <div class="form-check mb-1">
+                                <input class="form-check-input"  data-bs-dismiss="modal" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Lowest Price
+                                </label>
+                            </div>
+                            <div class="form-check mb-1">
+                                <input class="form-check-input"  data-bs-dismiss="modal" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                                <label class="form-check-label" for="flexRadioDefault3">
+                                    Hight Price
+                                </label>
+                            </div>
+                            <div class="form-check mb-1">
+                                <input class="form-check-input"  data-bs-dismiss="modal" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                                <label class="form-check-label" for="flexRadioDefault4">
+                                    Lowest Quantity
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input"  data-bs-dismiss="modal" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+                                <label class="form-check-label" for="flexRadioDefault5">
+                                    Hight Quantity
+                                </label>
+                            </div>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </div>
-    <!-- * Dialog Form -->
+    <!-- * Default Action Sheet Inset -->
 
     <!-- ========= JS Files =========  -->
     <!-- Bootstrap -->

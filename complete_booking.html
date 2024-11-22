@@ -21,7 +21,6 @@
 
     <!-- loader -->
     <div id="loader">
-        <!-- <img src="assets/img/loading-icon.png" alt="icon" class="loading-icon"> -->
         <div class="spinner-border text-info" role="status"></div>
     </div>
     <!-- * loader -->
@@ -32,16 +31,17 @@
             <a href="#" class="headerButton goBack">
                 <ion-icon name="chevron-back-outline"></ion-icon>
             </a>
-            <div class="pageTitle">
-                Complete booking
-            </div>
+        </div>
+
+        <div class="pageTitle">
+            Complete booking
         </div>
         
         <div class="right">
             <a href="#" class="headerButton toggle-searchbox">
                 <ion-icon name="search-outline"></ion-icon>
             </a>
-            <a href="#" data-bs-toggle="modal" data-bs-target="#FormFilter" class="headerButton">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#actionSheetInset" class="headerButton">
                 <ion-icon name="funnel-outline"></ion-icon>
             </a>
             <a href="#" data-bs-toggle="modal" data-bs-target="#FormDate" class="headerButton"> 
@@ -63,258 +63,52 @@
     </div>
     <!-- * Search Component -->
 
-     <!-- Extra Header -->
-    <div class="extraHeader pe-0 ps-0 bg-primary">
-        <ul class="nav nav-tabs lined" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link text-white">
-                    #
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white">
-                     Address
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white">
-                     Amount
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white">
-                     Fee
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white">
-                    Bus Fee
-                </a>
-            </li>
-        </ul>
-    </div>
-    <!-- * Extra Header -->
-
-
     <!-- App Capsule -->
-    <div id="appCapsule" class="extra-header-active full-height">
-
-        <!-- Transactions -->
-        <div class="section mt-2">
-            <div class="transactions">
-                <!-- item -->
-                <div class="item">
-                    <div class="detail">
-                        <div>
-                            <p>1</p>
-                        </div>
-                    </div>
-                    <div class="detail">
-                        <div>
-                            <p>Phnom Penh</p>
-                        </div>
-                    </div>
-                    <div class="detail">
-                        <div>
-                            <p>$100</p>
-                        </div>
-                    </div>
-                    <div class="detail">
-                        <div>
-                            <p>$0</p>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <div class="detail">
-                            <div>
-                               <p>$1.0</p>
-                            </div>
-                        </div>
-                    </div>
+    <div id="appCapsule">
+        <div class="section mt-2 mb-2">
+            <div class="section-title">Striped Table</div>
+            <div class="card">
+                <div class="table-responsive">
+                    <table class="table table-striped text-center">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">address</th>
+                                <th scope="col">Amount</th>
+                                <th scope="col">Fee</th>
+                                <th scope="col">Bus</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">15323</th>
+                                <td>John</td>
+                                <td>Manager</td>
+                                <td>Manager</td>
+                                <td>$ 509.40</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">55212</th>
+                                <td>Mark</td>
+                                <td>User</td>
+                                <td>Manager</td>
+                                <td>$ 230.95</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">44623</th>
+                                <td>Jane</td>
+                                <td>User</td>
+                                <td>Manager</td>
+                                <td>$ 3,420.50</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <!-- * item -->
-
-                <!-- item -->
-                <div class="item">
-                    <div class="detail">
-                        <div>
-                            <p>2</p>
-                        </div>
-                    </div>
-                    <div class="detail">
-                        <div>
-                            <p>Kandal</p>
-                        </div>
-                    </div>
-                    <div class="detail">
-                        <div>
-                            <p>$20</p>
-                        </div>
-                    </div>
-                    <div class="detail">
-                        <div>
-                            <p>$0.0</p>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <div class="detail">
-                            <div>
-                                <p>$1.0</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- * item -->
-                 <!-- item -->
-                <div class="item">
-                    <div class="detail">
-                        <div>
-                            <p>3</p>
-                        </div>
-                    </div>
-                    <div class="detail">
-                        <div>
-                            <p>Svay reing</p>
-                        </div>
-                    </div>
-                    <div class="detail">
-                        <div>
-                            <p>$30</p>
-                        </div>
-                    </div>
-                    <div class="detail">
-                        <div>
-                            <p>$0.0</p>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <div class="detail">
-                            <div>
-                                <p>$0.0</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- * item -->
-                 <!-- item -->
-                <div class="item">
-                    <div class="detail">
-                        <div>
-                            <p>4</p>
-                        </div>
-                    </div>
-                    <div class="detail">
-                        <div>
-                            <p>Phnom Penh</p>
-                        </div>
-                    </div>
-                    <div class="detail">
-                        <div>
-                            <p>$50</p>
-                        </div>
-                    </div>
-                    <div class="detail">
-                        <div>
-                            <p>$0.0</p>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <div class="detail">
-                            <div>
-                                <p>$0.0</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- * item -->
-                 <!-- item -->
-                <div class="item">
-                    <div class="detail">
-                        <div>
-                            <p>5</p>
-                        </div>
-                    </div>
-                    <div class="detail">
-                        <div>
-                            <p>Phnom Penh</p>
-                        </div>
-                    </div>
-                    <div class="detail">
-                        <div>
-                            <p>$50</p>
-                        </div>
-                    </div>
-                    <div class="detail">
-                        <div>
-                            <p>$0.0</p>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <div class="detail">
-                            <div>
-                                <p>$0.0</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- * item -->
             </div>
-        </div>
-        <!-- * Transactions -->
-        
-        <div class="section mt-2 mb-2" hidden>
-            <a href="#" class="btn btn-primary btn-block btn-lg">Load More</a>
         </div>
 
     </div>
     <!-- * App Capsule -->
-
-
-    <!-- App Bottom Menu -->
-    <div class="appBottomMenu bg-primary">
-        <div class="item text-info">
-            <div class="col">
-                <div class="bg-white rounded">
-                    <strong class="text-secondary">Amount</strong>
-                    <p class="p-1 fw-bold">$1000</p>
-                </div>
-            </div>
-        </div>
-        <div class="item text-info">
-            <div class="col">
-                <div class="bg-white rounded">
-                    <strong class="text-secondary">Fee</strong>
-                    <p class="p-1 fw-bold">$10</p>
-                </div>
-            </div>
-        </div>
-        <div class="item text-info">
-            <div class="col">
-                <div class="bg-white rounded">
-                    <strong class="text-secondary">Discount</strong>
-                    <p class="p-1 fw-bold">$10</p>
-                </div>
-            </div>
-        </div>
-        <div class="item text-info">
-            <div class="col">
-                <div class="bg-white rounded">
-                    <strong class="text-secondary">Bus Fee</strong>
-                    <p class="p-1 fw-bold">$0.0</p>
-                </div>
-            </div>
-        </div>
-        <div class="item text-info">
-            <div class="col">
-                <div class="bg-white rounded">
-                    <strong class="text-secondary">Balance</strong>
-                    <p class="p-1 fw-bold">$10</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- * App Bottom Menu -->
-
     <!-- Dialog Form -->
     <div class="modal fade dialogbox" id="FormDate" data-bs-backdrop="static" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
@@ -358,57 +152,53 @@
     </div>
     <!-- * Dialog Form -->
 
-    <!-- Dialog Form -->
-    <div class="modal fade dialogbox" id="FormFilter" data-bs-backdrop="static" tabindex="-1" role="dialog">
+    <!-- Default Action Sheet Inset -->
+    <div class="modal fade action-sheet inset" id="actionSheetInset" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Sort By</h5>
                 </div>
-                <form>
-                    <div class="modal-body text-start mb-2">
-                        <div class="form-check mb-1">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">
-                                Latest
-                            </label>
-                        </div>
-                        <div class="form-check mb-1">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                            <label class="form-check-label" for="flexRadioDefault2">
-                                Lowest Price
-                            </label>
-                        </div>
-                        <div class="form-check mb-1">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-                            <label class="form-check-label" for="flexRadioDefault3">
-                                Hight Price
-                            </label>
-                        </div>
-                        <div class="form-check mb-1">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
-                            <label class="form-check-label" for="flexRadioDefault4">
-                                Lowest Quantity
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
-                            <label class="form-check-label" for="flexRadioDefault5">
-                                Hight Quantity
-                            </label>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <div class="btn-inline">
-                            <button type="button" class="btn btn-text-primary"
-                                data-bs-dismiss="modal">Done</button>
+                <div class="modal-body">
+                    <div class="container mb-2">
+                        <div class="action-button-list">
+                            <div class="form-check mb-1">
+                                <input class="form-check-input"  data-bs-dismiss="modal" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Latest
+                                </label>
+                            </div>
+                            <div class="form-check mb-1">
+                                <input class="form-check-input"  data-bs-dismiss="modal" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Lowest Price
+                                </label>
+                            </div>
+                            <div class="form-check mb-1">
+                                <input class="form-check-input"  data-bs-dismiss="modal" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                                <label class="form-check-label" for="flexRadioDefault3">
+                                    Hight Price
+                                </label>
+                            </div>
+                            <div class="form-check mb-1">
+                                <input class="form-check-input"  data-bs-dismiss="modal" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                                <label class="form-check-label" for="flexRadioDefault4">
+                                    Lowest Quantity
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input"  data-bs-dismiss="modal" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+                                <label class="form-check-label" for="flexRadioDefault5">
+                                    Hight Quantity
+                                </label>
+                            </div>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </div>
-    <!-- * Dialog Form -->
+    <!-- * Default Action Sheet Inset -->
 
     <!-- ========= JS Files =========  -->
     <!-- Bootstrap -->
