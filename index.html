@@ -55,6 +55,8 @@
     <!-- App Capsule -->
     <div id="appCapsule">
 
+        
+
         <!-- Wallet Card -->
         <div class="section wallet-card-section pt-1">
             <div class="wallet-card">
@@ -63,8 +65,10 @@
                     <div class="left">
                         <span class="title">Total Balance</span>
                         <h1 class="total">$ 2,562.50</h1>
+                        
                     </div>
                     <div class="right">
+                        <button type="button" class="button" onclick="clickMe()">Click me</button>
                         <a href="#" class="button" data-bs-toggle="modal" data-bs-target="#depositActionSheet">
                             <ion-icon name="add-outline"></ion-icon>
                         </a>
@@ -806,6 +810,7 @@
             </div>
         </div>
     </div>
+    
 
     <!-- ========= JS Files =========  -->
     <!-- Bootstrap -->
@@ -820,6 +825,23 @@
     <script>
         // Add to Home with 2 seconds delay.
         AddtoHome("2000", "once");
+    </script>
+
+<script>
+
+    function clickMe() {
+        if ("speechSynthesis" in window) {
+          let msg = new SpeechSynthesisUtterance();
+              msg.voice = speechSynthesis.getVoices()[189];
+              msg.text = "លេខកូដរបស់អ្នកគឺ";
+              msg.volume = "+100";
+              // msg.pitch =  "";
+              msg.rate =  "1";
+          speechSynthesis.speak(msg);
+      }
+    }
+    
+    
     </script>
 
 </body>
