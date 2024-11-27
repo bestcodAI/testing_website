@@ -68,7 +68,6 @@
                         
                     </div>
                     <div class="right">
-                        <button type="button" class="button" onclick="clickMe()">Click me</button>
                         <a href="#" class="button" data-bs-toggle="modal" data-bs-target="#depositActionSheet">
                             <ion-icon name="add-outline"></ion-icon>
                         </a>
@@ -630,6 +629,16 @@
                                 </div>
                             </a>
                         </li>
+                        <li class="active">
+                            <a href="alphabet.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="home-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                                    alphabet                                    
+                                </div>
+                            </a>
+                        </li>
                         <li>
                             <a href="dashboard.html" class="item">
                                 <div class="icon-box bg-primary">
@@ -827,22 +836,7 @@
         AddtoHome("2000", "once");
     </script>
 
-<script>
 
-    function clickMe() {
-        if ("speechSynthesis" in window) {
-          let msg = new SpeechSynthesisUtterance();
-              msg.voice = speechSynthesis.getVoices()[189];
-              msg.text = "ក";
-              msg.volume = "+100";
-              // msg.pitch =  "";
-              msg.rate =  "1";
-          speechSynthesis.speak(msg);
-      }
-    }
-    
-    
-    </script>
 
 </body>
 
