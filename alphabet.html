@@ -326,7 +326,7 @@
                         </a>
                     </div>
                     <div class="col-6 mb-2">
-                        <a class="text-dark" href="#" onclick="speakKhmer('អក្សរ យរ')">
+                        <a class="text-dark" href="#" onclick="speakKhmer('អក្សរ យ')">
                         <div class="bill-box bg-danger">
                             <div class="img-wrapper">
                                <h1>យ</h1>
@@ -335,7 +335,7 @@
                         </a>
                     </div>
                     <div class="col-6 mb-2">
-                        <a class="text-dark" href="#" onclick="speakKhmer('អក្សរ ររ')">
+                        <a class="text-dark" href="#" onclick="speakKhmer('អក្សរ រ')">
                         <div class="bill-box bg-danger">
                             <div class="img-wrapper">
                                <h1>រ</h1>
@@ -619,29 +619,24 @@
     <script src="assets/js/base.js"></script>
 
     <script>
-        function readAlphabet(alphabet) {
-            if ("speechSynthesis" in window) {
-              let msg = new SpeechSynthesisUtterance();
-                  msg.voice = speechSynthesis.getVoices()[189];
-                  msg.text = alphabet;
-                  msg.volume = "+100";
-                  msg.pitch = 1;
-                  msg.rate =  "0.7";
-              speechSynthesis.speak(msg);
-          }
-        }
+        // function readAlphabet(alphabet) {
+        //     if ("speechSynthesis" in window) {
+        //       let msg = new SpeechSynthesisUtterance();
+        //           msg.voice = speechSynthesis.getVoices()[189];
+        //           msg.text = alphabet;
+        //           msg.volume = "+100";
+        //           msg.pitch = 1;
+        //           msg.rate =  "0.7";
+        //       speechSynthesis.speak(msg);
+        //   }
+        // }
 
         function speakKhmer(text) {
-            // Get the text from the textarea
-
-            // Initialize speech synthesis
+            if ("speechSynthesis" in window) {
             const utterance = new SpeechSynthesisUtterance(text);
-
-            // Set the language to Khmer
             utterance.lang = "km-KH";
-
-            // Speak the text
             speechSynthesis.speak(utterance);
+            }
         }
         
         </script>
